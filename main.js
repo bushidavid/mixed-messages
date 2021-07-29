@@ -1,12 +1,18 @@
-// first try using git
+//generate random number
+
+const randomIndex = array => Math.floor(Math.random() * array.length)
+
+//array of prefixes for the message
+const prefixes = ['You are', 'I am'];
+const middles = ['the', 'incredibly', 'amazingly', 'formidably'];
+const suffixes = ['talented', 'capable', 'skilled', 'educate', 'literate', 'passionate', 'kind', 'compassionate', 'rich'];
 
 
-const messageFactory = (prefix, middle, suffix) => {
+const messageFactory = (prefixes, middles, suffixes) => {
     return {
-        _prefix: prefix,
-        _middle: middle,
-        _suffix: suffix,
-        
+        _prefix: prefixes,
+        _middle: middles,
+        _suffix: suffixes,
         
     }
 }
